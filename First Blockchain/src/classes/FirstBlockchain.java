@@ -109,23 +109,8 @@ public class FirstBlockchain {
 	}
 	
 	public static void main(String[] args) {
-		
-		//Add blocks to ArrayList blockchain
-		/*blockchain.add(new Block("This is the first block", "0"));
-		System.out.println("Trying to Mine block 1...");
-		blockchain.get(0).mineBlock(difficulty);	
-		
-		blockchain.add(new Block("This is the second block", blockchain.get(blockchain.size()-1).hash));
-		System.out.println("Trying to Mine block 2...");
-		blockchain.get(1).mineBlock(difficulty);
-		
-		blockchain.add(new Block("This is the third block", blockchain.get(blockchain.size()-1).hash));
-		System.out.println("Trying to Mine block 3...");
-		blockchain.get(2).mineBlock(difficulty);
-		
-		System.out.println("\nBlockchain is Valid: " + isChainValid());
-		
-		//Use Gson library to convert objects to json object
+				
+		/*//Use Gson library to convert objects to json object
 		String blockchainString = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
 		System.out.println("\nThe block chain : ");
 		System.out.println(blockchainString);*/
@@ -186,6 +171,7 @@ public class FirstBlockchain {
 		
 		isChainValid();
 		
+		//Print public keys of both wallets
 		System.out.println("\nWalletA public key : " + StringUtil.getStringFromKey(walletA.publicKey));
 		System.out.println("WalletB public key : " + StringUtil.getStringFromKey(walletB.publicKey));
 		
